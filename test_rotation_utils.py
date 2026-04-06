@@ -29,3 +29,7 @@ def test_adjust_rotation_negative460():
 
 def test_adjust_rotation_negative820():
     assert adjust_rotation(-820) == 260
+
+def test_adjust_rotation_string_raises_typerror():
+    with pytest.raises(TypeError):
+        adjust_rotation("asd")
